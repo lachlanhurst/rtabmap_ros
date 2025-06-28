@@ -9,7 +9,7 @@ if(CMAKE_SYSTEM_PROCESSOR STREQUAL "aarch64")
   # issues #1285 #1288
   find_library(
     message_filters_LIB NAMES message_filters
-    PATHS "/opt/ros/$ENV{ROS_DISTRO}/lib"
+    PATHS "/opt/ros/$ENV{ROS_DISTRO}/install/lib"
     NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH REQUIRED
   )
 endif()
